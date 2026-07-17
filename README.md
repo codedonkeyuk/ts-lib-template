@@ -11,8 +11,9 @@ Used node:test for testing, so both tests and src code are using native TS and i
 | code               | description                                                                |
 | ------------------ | -------------------------------------------------------------------------- |
 | `npm install`      | install dependencies                                                       |
-| `nvm use`          | Use node version specified in projects .nvmrc file. (NVM needs installing) |
+| `nvm use`          | use node version specified in projects .nvmrc file. (NVM needs installing) |
 | `nvm run test`     | run node:test library                                                      |
+| `nvm run coverage` | runs node test coverage report                                             |
 | `nvm run clean`    | clean project using prettier                                               |
 | `nvm run validate` | validate code using typescript compiler. Does not generate files           |
 | `nvm run build`    | build ES module using typescript compiler                                  |
