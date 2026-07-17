@@ -22,7 +22,8 @@
     "prebuild": "npx prettier . --check && tsc --noEmit",
     "build": "tsc -p tsconfig.build.json",
     "test": "node --experimental-strip-types --test \"**/*.spec.ts\"",
-    "coverage": "node --experimental-strip-types --test --experimental-test-coverage \"**/*.spec.ts\""
+    "coverage": "node --experimental-strip-types --test --experimental-test-coverage \"**/*.spec.ts\"",
+    "prepare": "husky"
   },
   "devDependencies": {
     "@types/node": "^26.1.1",
