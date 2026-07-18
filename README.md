@@ -6,21 +6,21 @@ Used node:test for testing, so both tests and src code are using native TS and i
 
 **This code is still early doors, I will test it as I use it in other libraries, but be cautious.**
 
-# instructions
+## Commands
 
 | code               | description                                                                |
 | ------------------ | -------------------------------------------------------------------------- |
 | `npm install`      | install dependencies                                                       |
 | `nvm use`          | use node version specified in projects .nvmrc file. (NVM needs installing) |
-| `nvm run test`     | run node:test library                                                      |
-| `nvm run coverage` | runs node test coverage report                                             |
-| `nvm run clean`    | clean project using prettier                                               |
-| `nvm run validate` | validate code using typescript compiler. Does not generate files           |
-| `nvm run build`    | build ES module using typescript compiler                                  |
+| `npm run test`     | run node:test library                                                      |
+| `npm run coverage` | runs node test coverage report                                             |
+| `npm run clean`    | clean project using prettier                                               |
+| `npm run validate` | validate code using typescript compiler. Does not generate files           |
+| `npm run build`    | build ES module using typescript compiler                                  |
 
-# General Instructions
+## General Instructions
 
-## Update libraries
+### Update libraries
 
 How to update libraries to the latest
 
@@ -29,7 +29,7 @@ npx npm-check-updates -u
 npm install
 ```
 
-## Update nvm node
+### Update node
 
 This project has been set up to use a specific version of node via `.nvmrc` file. Run this command to update to you local version.
 
