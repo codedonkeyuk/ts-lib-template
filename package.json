@@ -2,16 +2,16 @@
   "name": "ts-lib-template",
   "version": "0.0.1",
   "description": "A simple ts library for use as a template",
-  "homepage": "https://github.com/leighgordy/ts-lib-template#readme",
+  "homepage": "https://github.com/codedonkeyuk/ts-lib-template#readme",
   "bugs": {
-    "url": "https://github.com/leighgordy/ts-lib-template/issues"
+    "url": "https://github.com/codedonkeyuk/ts-lib-template/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/leighgordy/ts-lib-template.git"
+    "url": "git+https://github.com/codedonkeyuk/ts-lib-template.git"
   },
   "license": "MIT",
-  "author": "Leigh G",
+  "author": "Leigh",
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
