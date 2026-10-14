@@ -17,9 +17,9 @@
   "types": "dist/index.d.ts",
   "private": true,
   "scripts": {
-    "clean": "npx prettier . --write",
-    "validate": "prettier . --check && tsc --noEmit && npx cspell README.md",
-    "prebuild": "npx prettier . --check && tsc --noEmit",
+    "clean": "npx prettier . --write && npx oxlint --type-aware --fix",
+    "validate": "prettier . --check && npx oxlint --type-aware && tsc --noEmit && npx cspell README.md",
+    "prebuild": "npx prettier . --check && npx oxlint --type-aware && tsc --noEmit",
     "build": "tsc -p tsconfig.build.json",
     "test": "node --experimental-strip-types --experimental-test-module-mocks --test \"**/*.test.ts\"",
     "coverage": "node --experimental-strip-types --experimental-test-module-mocks --test --experimental-test-coverage \"**/*.test.ts\"",
@@ -29,6 +29,8 @@
     "@types/node": "^26.1.1",
     "cspell": "^10.0.1",
     "husky": "^9.1.7",
+    "oxlint": "^1.88.0",
+    "oxlint-tsgolint": "^7.0.2004",
     "prettier": "3.9.5",
     "typescript": "^7.0.2"
   }
