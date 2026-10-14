@@ -18,7 +18,7 @@
   "private": true,
   "scripts": {
     "clean": "npx prettier . --write",
-    "validate": "tsc --noEmit",
+    "validate": "prettier . --check && tsc --noEmit && npx cspell README.md",
     "prebuild": "npx prettier . --check && tsc --noEmit",
     "build": "tsc -p tsconfig.build.json",
     "test": "node --experimental-strip-types --experimental-test-module-mocks --test \"**/*.test.ts\"",
@@ -27,6 +27,8 @@
   },
   "devDependencies": {
     "@types/node": "^26.1.1",
+    "cspell": "^10.0.1",
+    "husky": "^9.1.7",
     "prettier": "3.9.5",
     "typescript": "^7.0.2"
   }
